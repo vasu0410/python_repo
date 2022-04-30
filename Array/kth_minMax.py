@@ -1,4 +1,4 @@
-''' kth min and max values '''
+''' write program to find kth Maximum Value and Minimum Value for given array '''
 
 '''
 Test case 1
@@ -12,9 +12,9 @@ output = 4 3
 
 def kth_maxMin(l,k):
     '''
-    l : list
+    l : input array
     n : min value
-    n : max value
+    m : max value
     '''
     #sorting list
     l.sort()
