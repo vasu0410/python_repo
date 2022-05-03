@@ -22,7 +22,7 @@ def max_sub_array(arr):
     arr : input array
     sum : sum of element store in it
     '''
-    max_value = max(arr)
+    max_value = arr[0]
     sum = 0
 
     for i in arr:
@@ -30,8 +30,14 @@ def max_sub_array(arr):
         #store sum of array    
         sum += i
 
-    #fetch maximum value form sum and max value of array using max function    
-    max_value = max(sum,max_value)
+        # store i element to sum if sum is less then i 
+        if sum < i:
+            sum = i
+
+        # store sum value to max_value if max_value is less then sum 
+        if max_value < sum:
+            max_value = sum
+        
 
     return max_value    
 
