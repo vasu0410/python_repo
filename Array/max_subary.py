@@ -3,7 +3,7 @@
 
     Test Case 1:
         input = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-        output = 4
+        output = 6
 
     Test case 2:
         input = [-1,-2,-5,-6]
